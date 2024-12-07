@@ -4,11 +4,13 @@ import bg from "./img/bg.png";
 
 import Orb from "./Components/Orb/Orb";
 
-import Income from "./Components/Income/Income";
+// import Income from "./Components/Income/Income";
 
 import Home from "./Components/home/home";
 import Main from "./Main";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from "./Components/loginForm/Login";
+import SignUpForm from "./Components/signUp/SignUp";
 
 function App() {
   const orbMemo = useMemo(() => {
@@ -25,8 +27,8 @@ function App() {
             path="/main"
             element={<Main  />}
           />
-          <Route path="/login" element={<Income />} />
-          {/* <Route path="/login" element={<Expenses />} /> */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUpForm />} />
         </Routes>
       </Router>
     </AppStyled>

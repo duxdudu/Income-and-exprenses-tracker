@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import avatar from '../../img/avatar.png'
+import dux from '../../img/dux.jpg'
 import { signout } from '../../utils/Icons'
 import { menuItems } from '../../utils/menuItems'
 
@@ -9,7 +9,7 @@ function Navigation({active, setActive}) {
     return (
         <NavStyled>
             <div className="user-con">
-                <img src={avatar} alt="" />
+                <img src={dux} alt="" />
                 <div className="text">
                     <h2>Dux </h2>
                     <p>Your Money</p>
